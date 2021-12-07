@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-do</title>
+</head>
+
+<body>
+    <h1>Scrum Table By <strong>YAMAN</strong></h1>
+    <div class="container">
+        <div class="addTodo">
+            <input type="text" id="addItem" maxlength="50" placeholder="Add To-Do">
+            <button id="addbutton">ADD</button>
+        </div>
+
+
+
+        <hr>
+        <div id="alert-container">
+            <!-- <div class="alert">
+                    Başarıyla Eklendi
+                </div> -->
+        </div>
+        <br />
+        <hr />
+
+        <div class="filter">
+            <input type="text" id="filter" placeholder="Filter a To-Do List" />
+        </div>
+
+        <div class="board">
+            <div class="undone">
+                <h4>Undone <span id="count1">0/4</span></h4>
+                <hr />
+                <ul id="ul-undone">
+                    <!-- <li class="li-undone">
+                        <div class="undonediv">
+                            <input type="checkbox" id="checkbox">
+                            <span>Kahvaltı yapılacak</span>
+                        </div>
+                        <i class="fa fa-remove"></i>
+
+
+                    </li> -->
+                </ul>
+            </div>
+
+            <div class="process">
+                <h4>Processing <span id="count2">0/4</span></h4>
+                <hr />
+                <ul id="ul-process">
+                    <!-- <li class="li-process">
+                        <div class="processdiv">
+                            <input type="checkbox" id="checkbox">
+                            <span>Kahvaltı yapılıyor</span>
+                        </div>
+                        <i class="fa fa-remove"></i>
+
+
+                    </li> -->
+                </ul>
+            </div>
+
+            <div class="done">
+                <h4>Done <span id="count3">0/4</span></h4>
+                <hr />
+                <ul id="done">
+                    <!-- <li class="li-done">
+                        <div class="donediv">
+                            <input type="checkbox" id="checkbox">
+                            <span>Kahvaltı yapılıyor</span>
+                        </div>
+                        <i class="fa fa-remove"></i>
+
+
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
